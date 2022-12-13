@@ -11,7 +11,4 @@ void setup() {
 void loop() {
   readValue = analogRead(pinPotentiometer);
   Serial.println(readValue);
-
-  int newValue = map(readValue, 0, 1023, 0, 255);
-  analogWrite(led, newValue);
 }
